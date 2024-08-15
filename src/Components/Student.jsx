@@ -6,7 +6,7 @@ const StudentPage = () => {
   return (
     <div className="flex bg-gray-100 h-screen">
       <Navbar type="Student"/>
-      <div className="flex-1 ml-64">
+      <div className="flex-1 md:ml-64">
         <StudentTable />
       </div>
     </div>

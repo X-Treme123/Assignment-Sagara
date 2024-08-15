@@ -2,7 +2,7 @@ import { AiOutlineDown } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <div className="bg-white w-full">
+    <div className="mt-20 md:mt-0 bg-white w-full">
       <div className="container mx-auto p-4 gap-2 flex items-center justify-end">
         <div className="flex flex-col items-end">
           <p className="text-lg font-bold">Thomas Anree</p>

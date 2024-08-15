@@ -175,7 +175,7 @@ const StudentTable = () => {
   return (
     <div className="max-w-full">
       <Header />
-      <div className="bg-gray-100 flex flex-col p-10 justify-center">
+      <div className="bg-gray-100 flex flex-col md:p-10 justify-center">
         <div className="flex flex-col gap-8">
           <div className="text-3xl font-semibold">Data Student</div>
           <div className="flex items-center justify-between">
@@ -215,7 +215,7 @@ const StudentTable = () => {
                     />
                   </div>
                   <button
-                    className="mt-4 bg-red-600 text-white w-full py-2 rounded-md"
+                    className="mt-4 bg-customRed text-white w-full py-2 rounded-md"
                     onClick={handleAddFilter}>
                     Add Filter
                   </button>
@@ -223,7 +223,7 @@ const StudentTable = () => {
               )}
 
               <button
-                className="bg-red-600 text-white px-4 py-2 rounded-md"
+                className="bg-customRed text-white px-4 py-2 rounded-md"
                 onClick={openModal}>
                 + Add User
               </button>
@@ -300,7 +300,7 @@ const StudentTable = () => {
         </div>
 
         {/* Table */}
-        <div className="overflow-auto h-[35rem] bg-white mt-10 border-2 custom-scroll">
+        <div className="overflow-auto md:h-[35rem] bg-white mt-10 border-2 custom-scroll">
           <table className="min-w-full">
             <thead className="sticky top-0 bg-gray-100 border-b-2">
               <tr>
@@ -368,7 +368,7 @@ const StudentTable = () => {
           <div className="flex">
             <button className="px-2">1</button>
             <button className="px-2">2</button>
-            <button className="bg-red-600 px-4 rounded-lg text-white">6</button>
+            <button className="bg-customRed px-4 rounded-lg text-white">6</button>
             <button className="px-2">7</button>
             <button className="px-2">8</button>
           </div>

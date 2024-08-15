@@ -4,11 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import DashboardPage from "./Components/Dashboard";
 import StudentPage from "./Components/Student";
+import { LandingPage } from "./pages/landing";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    element: <LandingPage />,
   },
   {
     path: "/dashboard",

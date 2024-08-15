@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { GiGraduateCap } from "react-icons/gi";
 import { BiGridAlt } from "react-icons/bi";
-import { FaBars } from "react-icons/fa"; // Import icon hamburger
+import { FaBars } from "react-icons/fa"; 
+import { MdHome } from "react-icons/md";
+
 
 const Navbar = (props) => {
   const { type } = props;
@@ -20,7 +22,7 @@ const Navbar = (props) => {
         </div>
         <ul className="mt-10">
           <p className="text-gray-500 font-bold mx-4 px-2">Menu</p>
-          <li className={`py-2 px-4 ${type === "Dashboard" ? "bg-red-600" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-2`}>
+          <li className={`py-2 px-4 ${type === "Dashboard" ? "bg-customRed" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-2 transition ease-in-out`}>
             <Link to="/dashboard" className="flex items-center">
               <div className="flex items-center gap-3">
                 <p><BiGridAlt /></p>
@@ -28,11 +30,21 @@ const Navbar = (props) => {
               </div>
             </Link>
           </li>
-          <li className={`py-2 px-4 ${type === "Student" ? "bg-red-600" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-3`}>
+          <li className={`py-2 px-4 ${type === "Student" ? "bg-customRed" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-3 transition ease-in-out`}>
             <Link to="/student" className="flex items-center">
               <div className="flex items-center gap-3">
                 <p><GiGraduateCap /></p>
                 <p>Students</p>
+              </div>
+            </Link>
+          </li>
+        </ul>
+        <ul className="mt-10">
+          <li className={`py-2 px-4 hover:bg-gray-700 mx-4 rounded-lg cursor-pointer mt-2 transition ease-in-out`}>
+            <Link to="/" className="flex items-center">
+              <div className="flex items-center gap-3">
+                <p><MdHome /></p>
+                <p>Home</p>
               </div>
             </Link>
           </li>
@@ -54,7 +66,7 @@ const Navbar = (props) => {
         </div>
         <ul className="mt-10">
           <p className="text-gray-500 font-bold mx-4 px-2">Menu</p>
-          <li className={`py-2 px-4 ${type === "Dashboard" ? "bg-red-600" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-2`}>
+          <li className={`py-2 px-4 ${type === "Dashboard" ? "bg-customRed" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-2`}>
             <Link to="/dashboard" className="flex items-center" onClick={() => setIsOpen(false)}>
               <div className="flex items-center gap-3">
                 <p><BiGridAlt /></p>
@@ -62,11 +74,21 @@ const Navbar = (props) => {
               </div>
             </Link>
           </li>
-          <li className={`py-2 px-4 ${type === "Student" ? "bg-red-600" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-3`}>
+          <li className={`py-2 px-4 ${type === "Student" ? "bg-customRed" : "hover:bg-gray-700"} mx-4 rounded-lg cursor-pointer mt-3`}>
             <Link to="/student" className="flex items-center" onClick={() => setIsOpen(false)}>
               <div className="flex items-center gap-3">
                 <p><GiGraduateCap /></p>
                 <p>Students</p>
+              </div>
+            </Link>
+          </li>
+        </ul>
+        <ul className="mt-10">
+          <li className={`py-2 px-4 hover:bg-gray-700 mx-4 rounded-lg cursor-pointer mt-2 transition ease-in-out`}>
+            <Link to="/" className="flex items-center">
+              <div className="flex items-center gap-3">
+                <p><MdHome /></p>
+                <p>Home</p>
               </div>
             </Link>
           </li>

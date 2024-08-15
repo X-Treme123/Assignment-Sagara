@@ -6,12 +6,13 @@ export default {
   ],
   theme: {
     fontFamily: {
-      Inter: ['Inter', 'sans-serif'],
+      Inter: ["Inter", "sans-serif"],
+      InterBold: ["Inter-Bold", "sans-serif"],
     },
     extend: {
       colors: {
-        customRed: "rgb(165, 21, 53, 1)",
-      }
+        customRed: "rgb(165,21,53,1)",
+      },
     },
   },
   plugins: [],

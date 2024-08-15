@@ -11,7 +11,7 @@ const DashboardPage = () => {
       <Navbar type="Dashboard" />
       <div className="flex-1">
         <Header />
-        <div className="flex-1 p-8  ml-64">
+        <div className="flex-1 mt-5 md:mt-0 md:p-8 md:ml-64">
           <div className="flex justify-between items-center">
             <div className="bg-white p-2 flex gap-2 items-center shadow-lg">
               <CiCalendar className="text-2xl"/>
