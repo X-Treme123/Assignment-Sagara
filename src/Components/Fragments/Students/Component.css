@@ -1,0 +1,5 @@
+/* Custom Scrollbar untuk elemen dengan class .custom-scroll */
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
+

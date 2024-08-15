@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../public/Fonts/Inter_18pt-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
