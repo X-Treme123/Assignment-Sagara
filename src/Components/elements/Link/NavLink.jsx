@@ -52,10 +52,10 @@ export const NavLink = () => {
               </li>
               <li>
                 <Link
-                  to="#apply"
+                  to="/dashboard"
                   className="block px-4 py-2 text-gray-700 transition-colors duration-300 hover:bg-gray-100"
                 >
-                  Apply Now
+                  Dashboard
                 </Link>
               </li>
             </ul>

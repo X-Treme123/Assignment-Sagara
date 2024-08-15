@@ -25,7 +25,7 @@ export const Section1 = () => {
               <span>everywhere else.</span>
             </p>
             <Link to="/dashboard" className="px-6 py-2 text-xs text-white rounded-md bg-customRed md:text-base lg:text-lg md:px-10 md:py-3 hover:bg-red-900 transition-all">
-              Dashboard
+              Get Sertification
             </Link>
           </div>
         </div>

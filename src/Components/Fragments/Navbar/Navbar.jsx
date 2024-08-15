@@ -18,11 +18,6 @@ export const Navbar = () => {
           <button
             className="md:hidden focus:outline-none"
             onClick={toggleMenu}
-            // onClick={() => {
-            //   console.log("Menu state before toggle:", isMenuOpen);
-            //   setIsMenuOpen(!isMenuOpen);
-            //   console.log("Menu state after toggle:", !isMenuOpen);
-            // }}
             aria-label="Toggle menu"
           >
             <svg
