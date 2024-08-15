@@ -1,9 +1,9 @@
-import { Footer } from "../components/fragments/Footer/Footer";
-import { Navbar } from "../components/fragments/Navbar/Navbar";
-import { Section1 } from "../components/fragments/Section/Section1";
-import { Section2 } from "../components/fragments/Section/Section2";
-import { Section3 } from "../components/fragments/Section/Section3";
-import { Section4 } from "../components/fragments/Section/Section4";
+import { Footer } from "../Components/Fragments/Footer/Footer";
+import { Navbar } from "../Components/Fragments/Navbar/Navbar";
+import { Section1 } from "../Components/Fragments/Section/Section1";
+import { Section2 } from "../Components/Fragments/Section/Section2";
+import { Section3 } from "../Components/Fragments/Section/Section3";
+import { Section4 } from "../Components/Fragments/Section/Section4";
 
 export const LandingPage = () => {
   return (
