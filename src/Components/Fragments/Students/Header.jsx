@@ -9,7 +9,7 @@ const Header = () => {
           <p>Admin</p>
         </div>
         <img
-          src="src/assets/profile.png"
+          src="/images/profile.png"
           alt="Admin"
           className="ml-2 rounded-full"
         />

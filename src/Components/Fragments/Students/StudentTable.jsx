@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
-import Modal from "react-modal";
+import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import Header from "./Header";
-import { IoFilter } from "react-icons/io5";
-import { FaRegTrashAlt } from "react-icons/fa";
-import { FaPen } from "react-icons/fa";
-import { IoSettingsOutline } from "react-icons/io5";
+import { FaPen, FaRegTrashAlt } from "react-icons/fa";
+import { IoFilter, IoSettingsOutline } from "react-icons/io5";
+import Modal from "react-modal";
 import "./Component.css";
+import Header from "./Header";
 
 Modal.setAppElement("#root");
 
@@ -301,24 +299,23 @@ const StudentTable = () => {
 
         {/* Table */}
         <div className="overflow-auto md:h-[35rem] bg-white mt-10 border-2 custom-scroll">
-          <table className="min-w-full">
-            <thead className="sticky top-0 bg-gray-100 border-b-2">
-              <tr>
-                <th className="px-4 py-2">Profil</th>
-                <th className="px-4 py-2">Full Name</th>
-                <th className="px-4 py-2">Email Address</th>
-                <th className="px-4 py-2">Phone Number</th>
-                <th className="px-4 py-2">Instance</th>
-                <th className="px-4 py-2">Created At</th>
-                <th className="px-4 py-2">Action</th>
+          <table className="min-w-full block md:table">
+            <thead className="block md:table-header-group">
+              <tr className="block md:table-row">
+                <th className="block md:table-cell">Full Name</th>
+                <th className="block md:table-cell">Email</th>
+                <th className="block md:table-cell">Phone Number</th>
+                <th className="block md:table-cell">Instance</th>
+                <th className="block md:table-cell">Created At</th>
+                <th className="block md:table-cell">Action</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="block md:table-row-group">
               {filteredStudents.map((student, index) => (
                 <tr className="border-y-2" key={index}>
                   <td className="px-4 py-2 flex justify-center">
                     <img
-                      src="src/assets/people.png"
+                      src="/images/people.png"
                       alt="Profil"
                       className="rounded-full"
                     />
@@ -368,7 +365,9 @@ const StudentTable = () => {
           <div className="flex">
             <button className="px-2">1</button>
             <button className="px-2">2</button>
-            <button className="bg-customRed px-4 rounded-lg text-white">6</button>
+            <button className="bg-customRed px-4 rounded-lg text-white">
+              6
+            </button>
             <button className="px-2">7</button>
             <button className="px-2">8</button>
           </div>

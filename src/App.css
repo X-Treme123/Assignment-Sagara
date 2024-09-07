@@ -5,3 +5,38 @@
 body::-webkit-scrollbar {
   display: none;
 }
+
+
+@media (max-width: 768px) {
+  .custom-scroll {
+    height: auto;
+  }
+
+  table {
+    display: block;
+  }
+
+  thead, tbody, tr, td, th {
+    display: block;
+  }
+
+  th {
+    text-align: left;
+  }
+  
+  td {
+    padding-left: 50%;
+    position: relative;
+  }
+  
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+
